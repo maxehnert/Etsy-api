@@ -7,15 +7,18 @@ li{
   list-style:none;
   @include span-columns(3);
   @include omega(3n);
-
+  border:1px solid red;
+  background-color:white;
+  border-spacing:15px;
+  width:224px;
+  font-family: arial,helvetica,sans-serif;
+  font-size:12px;
 }
 body {
-  background: #fafafa;
+  background:HSLA(60, 17%, 95%, 1);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   margin-left:0px;
-
-
 }
 
 section{
@@ -23,6 +26,15 @@ section{
 }
 
 img{
-  width: 214px;
+  width: 100%;
   height: 170px;
+  display: inline-block;
+  border: 5px solid white;
+}
+
+.truncate{
+  width: 200px;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
